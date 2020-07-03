@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacgroud"
+    tools:context=".SettingsActivity">
+   <ImageView
+       android:layout_width="250dp"
+       android:layout_height="250dp"
+       android:id="@+id/setting_profile_image"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       android:src="@drawable/profile"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_Settings"
+        android:drawableLeft="@drawable/random"
+        android:layout_below="@+id/setting_profile_image"
+        android:drawableTint="@android:color/white"
+        android:layout_marginStart="15dp"
+        android:hint="@string/write_your_name"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bio_Settings"
+        android:drawableLeft="@drawable/ran"
+        android:layout_below="@+id/username_Settings"
+        android:drawableTint="@android:color/white"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="@string/write_your_status"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_Settings_btn"
+
+        android:layout_below="@+id/bio_Settings"
+        android:layout_marginStart="18dp"
+        android:backgroundTint="@android:color/white"
+        android:text="@string/save"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"/>
+
+
+</RelativeLayout>
